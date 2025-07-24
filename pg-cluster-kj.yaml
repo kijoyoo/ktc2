@@ -3,7 +3,7 @@ kind: Cluster
 metadata:
   name: my-pg-cluster # 클러스터의 이름
 spec:
-  instances: 4 # Primary 1개, Standby 2개 (총 3개 인스턴스)
+  instances: 5 # Primary 1개, Standby 2개 (총 3개 인스턴스)
   primaryUpdateStrategy : unsupervised
   imageName: ghcr.io/cloudnative-pg/postgresql:15 # 사용할 PostgreSQL Docker 이미지 (PostgreSQL 13 이상 사용 권장)
 
