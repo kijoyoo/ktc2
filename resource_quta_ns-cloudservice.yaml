@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: pvc-storage-limit
+  namespace: ns-cloudservice
+spec:
+  hard:
+    requests.storage: 10Gi           # PVC 요청 용량 총합 제한
+    persistentvolumeclaims: "10"    # PVC 개수 제한
+
